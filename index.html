@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!--Encoding-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Title-->
+	<title>KPI BOT</title>
+	<!--Meta Tags-->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="theme-color" content="#000000">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	<!--Styles-->
+	<link rel="stylesheet" href="styles/main-style.css">
+</head>
+<!--Main Content-->
+
+<body>
+	<!--Main Sections-->
+	<main class="main">
+		<div class="container">
+			<section class="main__body">
+				<div class="main__box">
+					<h3 class="main__title">Выберите приложение</h3>
+					<div class="switch">
+						<button class="switcher active fb_switch">FB</button><button
+							class="switcher uac_switch">UAC</button>
+					</div>
+				</div>
+				<form class="main__form">
+					<div class="apps" id="fullpage">
+					</div>
+					<div class="area">
+						<h3 class="main__title" id='appName'>Имя приложения</h3>
+						<div class="area__box">
+							<div class="area__container">
+								<div class="area-one">
+									<input class="text-area" type="number" name="camp" placeholder="Campaign ID"
+										required>
+									<button class="btn" id="campaign">Отправить</button>
+								</div>
+							</div>
+							<div class="area__container">
+								<textarea class="text-area textarea" name="fb" id="" cols="30" rows="7"
+									placeholder="Facebook RK" required></textarea>
+								<div>
+									<button class="btn btn-blue" id="facebook">Отправить</button>
+									<svg class="spinner share-loading" viewBox="0 0 50 50">
+										<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5">
+										</circle>
+									</svg>
+									<svg class="share-done" width="50" height="50"
+										style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128"
+										xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+										<style type="text/css">
+											.st0 {
+												fill: #3a88d3;
+											}
+
+											.st1 {
+												fill: #FFFFFF;
+											}
+										</style>
+										<g>
+											<circle class="st0" cx="64" cy="64" r="64"></circle>
+										</g>
+										<g>
+											<path class="st1"
+												d="M54.3,97.2L24.8,67.7c-0.4-0.4-0.4-1,0-1.4l8.5-8.5c0.4-0.4,1-0.4,1.4,0L55,78.1l38.2-38.2   c0.4-0.4,1-0.4,1.4,0l8.5,8.5c0.4,0.4,0.4,1,0,1.4L55.7,97.2C55.3,97.6,54.7,97.6,54.3,97.2z">
+											</path>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	<script src="scripts/fullpage.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
