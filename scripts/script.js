@@ -57,7 +57,7 @@ const appCreate = (appName, appImage, appBandle, appFb, i, appBot) => {
 
 const appRequest = (type) => {
 	const request = new XMLHttpRequest();
-	const url = "api.php?key=kpi47Gg45g45";
+	const url = /*API KEY*/;
 
 	request.open("POST", url, true);
 	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -226,7 +226,7 @@ setTimeout(function () {
 	const Send = (e, second) => {
 
 		const request = new XMLHttpRequest();
-		const url = "api.php?key=kpi47Gg45g45";
+		const url = "/*API KEY*/";
 		request.open("POST", url, true);
 
 		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -344,7 +344,7 @@ setTimeout(function () {
 	const asking = (id) => {
 
 		const request = new XMLHttpRequest();
-		const url = "api.php?key=kpi47Gg45g45";
+		const url = "/*API KEY*/";
 		request.open("POST", url, true);
 
 		request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
